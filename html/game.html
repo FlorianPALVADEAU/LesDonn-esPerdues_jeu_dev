@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <style> 
+        @font-face{
+            font-family: 'Circular'; 
+            font-weight: 400;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.eot);
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.eot?#iefix) format('embedded-opentype'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.woff2) format('woff2'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.woff) format('woff'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.ttf) format('truetype'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.svg) format('svg');
+        }
+        @font-face{
+            font-family: 'Circular'; 
+            font-weight: 700;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.eot);
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.eot?#iefix) format('embedded-opentype'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.woff2) format('woff2'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.woff) format('woff'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.ttf) format('truetype'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.svg) format('svg');
+        }
+    
+    </style>
+    <script src="../js/script.js" defer></script>
+    <title>Arcade Terminal - Missions</title></head>
+<body>
+    <audio id="electricity">
+        <source src="../audio/electricity_sound.mp3" type="audio/mpeg" loop autoplay>
+    </audio>
+    <div class="crt">
+        <div class="terminal">
+            <section class="content"> 
+                <img src="../img/party_gif.gif" alt="party_gif" class="gif hidden" style="width: 100vw; height: 100vh; position: fixed; top:0; ">
+                <div class="heading">
+                    <img src="../img/Arcade.png" alt="Arcade logo">
+                    <div class="text">
+                        <h1>ARCADE 4004 - Terminal</h1>
+                        <h3>Centre de contrôle du système de la borne d'arcade 4004</h3>
+                        <h3>Missions</h3>
+                        <p><i>Version 2.09.7</i></p>
+                    </div>
+                </div>
+                <p class="info"><i>Pour cette mission tu devras utiliser le flex-box ! Une documentation est disponible sur le bureau...</i></p>
+                <div class="game">
+                    <div class="form">
+                        <input type="text" id="inputGame" placeholder="Tape tes lignes de code une à une ici !" autocomplete="off">
+                        <button id="check">Verifier</button>
+                    </div>
+                    <div class="gameSheet">
+                        <div class="scenario1 hidden" id="scenario1">
+                            <p>Brancher la prise grâce au flex-box</p>
+                            <div class="box" id="box1"></div>
+                            <div class="container" id="container1"></div>
+                        </div>
+                        <div class="scenario2 hidden" id="scenario2">
+                            <p>Brancher la prise grâce au flex-box</p>
+                            <p id="pInfo"><i>Commencez par le 'justify-content' !</i></p>
+                            <div class="box" id="box2"></div>
+                            <div class="container" id="container2"></div>
+                        </div>
+                        <div class="scenario3" id="scenario3">
+                            <p>Brancher les prises grâce au flex-box</p>
+                            <p id="pInfo2"><i>Commencez par le 'justify-content' !</i></p>
+                            <div class="box" id="box3"></div>
+                            <div class="box1" id="box4"></div>
+                            <div class="container" id="container3"></div>
+                            <div class="container1" id="container4"></div>
+                        </div>
+                        <div class="success hidden" id="success">
+                            <audio id="yeah">
+                                <source src="../audio/yeah.mp3" type="audio/mpeg" loop autoplay>
+                            </audio>
+                            <h2 id="successH2">▶ Bien joué !</h2>
+                            <p id="successP"><i>Au niveau suivant...</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="win hidden" id="gameWon">
+                    <a href="./password.html">▶ Accéder au mot de passe secret</a>
+                </div>
+            </section>
+        </div>
+        <div class="vline"></div>
+    </div>
+    <div class="scan-line"></div>
+</body>
+</html>

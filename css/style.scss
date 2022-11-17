@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Circular';
+    color: rgb(64, 172, 64);
+}
+*:focus {
+    outline: none;
+}
+
+
+body{
+    z-index: 100000000000;
+    background-color: rgb(5, 5, 5);
+    background-image: url(../img/output-onlinepngtools.png);
+    background-size: contain; background-repeat: no-repeat;
+    animation: flash 2s infinite ease-in-out;
+    @keyframes flash {
+        
+    }
+    .pageBroken{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        p{
+            font-size: 12px;
+        }
+        input{
+            width: 90%;
+            border: 0;
+            background-color: rgb(5, 5, 5);
+            border-radius: 5px;
+            margin: 5vh;
+            padding: 5px;
+        }
+        button{
+            width: 30%;
+            background-color: transparent;
+            border: 1px solid rgba(64, 172, 64, 0.362);
+            color: rgb(95, 95, 95);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 2vh;
+            cursor: pointer;
+        }
+    }
+    .content{
+        z-index: 100000000000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .heading{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10vw;
+
+            .text{
+                padding-left: 10vw;
+                h1{
+                    font-size: 50px;
+                    line-height: 40px;
+                }
+                h3{
+                    margin-top: 2%;
+                    font-size: 25px;
+                    line-height: 25px;
+                    padding-left: 5%;
+                    width: 80%;
+                    color: rgb(64, 130, 64);
+                    :hover{
+                        width: 100vw;
+                        background-color: rgb(64, 130, 64);
+                        color: rgb(5, 5, 5);
+                
+                    }
+                }
+                p{
+                    margin-top: 2%;
+                    font-size: 16px;
+                    padding-left: 5%;
+                    color: rgb(64, 130, 64);
+                }
+            }
+            
+            img{
+                padding: 40px;
+                width: 300px;
+                height: 400px;
+                border-radius: 35%;
+            }
+        }
+        .welcome{
+            width: 100%;
+            height: 120vh;
+            margin-top: 10vh;
+            padding-left: 10vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .welcomeText, 
+            .presentation, 
+            .link{
+                width: 80%;
+                height: 30vh;
+
+                p{
+                    padding-left: 5vw;
+                    width: 70%;
+                    margin-bottom: 0.5%;
+                    margin-top: 0.5%;
+                }
+                h2{
+                    font-size: 35px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                h2:hover{
+                    a{
+                        color: rgb(5, 5, 5);
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                    cursor: pointer;
+                    color: rgb(5, 5, 5);
+                    background-color: rgb(64, 172, 64);
+                }
+            }
+        }
+        .info{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+        }
+        .game{
+            width: 90%;
+            height: 98vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1vh;
+            .form{
+                width: 30%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                input{
+                    width: 100%;
+                    height: 85%;
+                    border: 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    border-top-left-radius: 15px;
+                    background-color: rgba($color: #000000, $alpha: 0.1);
+                    border: 0.5px solid rgba(255, 255, 255, 0.3);
+                    border-right: 0;
+                    border-bottom: 0;
+                    background: none;
+                }
+                button{
+                    width: 100%;
+                    height: 15%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0;
+                    background-color: rgba($color: #000000, $alpha: 0.4);
+                    border: 0.5px solid rgba(255, 255, 255, 0.3);
+                    border-right: 0;
+                    border-bottom-left-radius: 15px;
+                }
+            }
+            .gameSheet{
+                border: 0.5px solid rgba(255, 255, 255, 0.3);
+                width: 70%;
+                height: 100%;
+                background-color: rgba($color: #000000, $alpha: 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+
+                .scenario1{
+                    padding: 20px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: relative;
+                    .box{
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(../img/Prise1.png);
+                        background-size: contain; 
+                        background-repeat: no-repeat;
+                        z-index: 2;
+                        animation-delay: 4s;
+                    }
+                    .container{
+                        height: 120px;
+                        width: 120px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        right: 11px;
+                        background-image: url(../img/interupteur1.png);
+                        background-size: contain; 
+                        background-repeat: no-repeat;
+                    }
+                    p{
+                        position: absolute;
+                        top: 30px;
+                    }
+                }
+                .scenario2{
+                    padding: 20px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    position: relative;
+                    .box{
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(../img/Prise1.png);
+                        background-size: contain; 
+                        background-repeat: no-repeat;
+                        z-index: 2;
+                    }
+                    .container{
+                        height: 120px;
+                        width: 120px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        left: 11px;
+                        bottom: 11px;
+                        background-image: url(../img/interupteur1.png);
+                        background-size: contain; 
+                        background-repeat: no-repeat;
+                    }
+                    p{
+                        position: absolute;
+                        bottom: 30px;
+                        left: 50%;
+                    }
+                    #pInfo{
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        font-size: 12px;
+                    }
+                }
+                .scenario3{
+                    padding: 20px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    position: relative;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    .box{
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(../img/Prise1.png);
+                        background-size: contain; 
+                        background-repeat: no-repeat;  
+                        z-index: 2;
+                    }
+                    .box1{
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(../img/Prise2.png);
+                        background-size: contain; 
+                        background-repeat: no-repeat;
+                        z-index: 2;
+                    }
+                    .container{
+                        height: 120px;
+                        width: 120px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        right: 10px;
+                        bottom: 139px;
+                        background-image: url(../img/interupteur1.png);
+                        background-size: contain; 
+                        background-repeat: no-repeat;
+                    }
+                    .container1{
+                        height: 120px;
+                        width: 120px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        right: 10px;
+                        top: 139px;
+                        background-image: url(../img/interupteur2.png);
+                        background-size: contain; 
+                        background-repeat: no-repeat;
+                    }
+                    p{
+                        position: absolute;
+                        bottom: 30px;
+                        left: 10%;
+                    }
+                    #pInfo2{
+                        position: absolute;
+                        bottom: 10px;
+                        left: 10%;
+                        font-size: 12px;
+                    }
+                }
+                .success{
+                    width: 60%;
+                    height: 60%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    animation: success 2s infinite ease-in-out;
+                    @keyframes success {
+                        0% {
+                            transform: scale(1, 1);
+                        }
+                        50% {
+                            transform: scale(1.5, 1.5);
+                        }
+                        100% {
+                            transform: scale(1, 1);
+                        }
+                    }
+                    h2{
+                        font-size: 40px;
+                    }
+                }
+                .hidden{
+                    display: none;
+                }
+                
+            }
+        }
+        .win{
+            width: 90%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hidden{
+            display: none;
+        }
+    }
+    .hidden{
+        display: none;
+    }
+
+}
